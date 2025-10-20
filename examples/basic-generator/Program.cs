@@ -18,7 +18,8 @@ var builder = new PageBuilder()
     .AddPage("/about", () => new Layout().Content(new AboutView(layout)))
     .AddPage("/contact", () => new Layout().Content(new ContactView(layout)))
     .AddPage("/grid-examples", () => new Layout().Content(new GridExamplesView()))
-    .AddPage("/responsive", () => new Layout().Content(new ResponsiveExamplesView()));
+    .AddPage("/responsive", () => new Layout().Content(new ResponsiveExamplesView()))
+    .AddPage("/typography", () => new Layout().Content(new TypographyExamplesView()));
 
 var generator = new StaticSiteGenerator("./out", new StaticSiteOptions
 {
