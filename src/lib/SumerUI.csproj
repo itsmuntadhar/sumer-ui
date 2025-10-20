@@ -4,6 +4,27 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <!-- Package Metadata -->
+        <PackageId>SumerUI</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>itsmuntadhar</Authors>
+        <Company>itsmuntadhar</Company>
+        <Description>A type-safe, fluent C# library for generating static HTML with Tailwind-inspired utilities. Core library with element abstractions and extension methods.</Description>
+        <PackageTags>html;static-site-generator;fluent-api;tailwind;csharp;dotnet;type-safe;utilities</PackageTags>
+        <PackageProjectUrl>https://github.com/itsmuntadhar/sumer-ui</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/itsmuntadhar/sumer-ui</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
 </Project>

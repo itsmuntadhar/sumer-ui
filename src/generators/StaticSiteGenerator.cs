@@ -53,7 +53,9 @@ public class StaticSiteGenerator
     public async Task CopyStaticAssetsAsync(string assetsDir)
     {
         if (!Directory.Exists(assetsDir))
+        {
             return;
+        }
 
         var targetDir = Path.Combine(_outputDir, "assets");
         Directory.CreateDirectory(targetDir);

@@ -1,13 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <ItemGroup>
-        <ProjectReference Include="..\lib\SumerUI.csproj" />
-    </ItemGroup>
-
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <!-- Package Metadata -->
+        <PackageId>SumerUI.Renderers</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>itsmuntadhar</Authors>
+        <Company>itsmuntadhar</Company>
+        <Description>HTML renderer for SumerUI. Converts SumerUI elements to HTML strings with support for minification and formatting options.</Description>
+        <PackageTags>html;renderer;static-site-generator;fluent-api;csharp;dotnet</PackageTags>
+        <PackageProjectUrl>https://github.com/itsmuntadhar/sumer-ui</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/itsmuntadhar/sumer-ui</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\lib\SumerUI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
 </Project>

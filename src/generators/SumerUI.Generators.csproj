@@ -1,14 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\renderers\SumerUI.Renderers.csproj" />
-    <ProjectReference Include="..\lib\SumerUI.csproj" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+        <!-- Package Metadata -->
+        <PackageId>SumerUI.Generators</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>itsmuntadhar</Authors>
+        <Company>itsmuntadhar</Company>
+        <Description>Static site generator for SumerUI. Generate complete static websites from SumerUI elements with support for routing, asset management, and deployment options.</Description>
+        <PackageTags>static-site-generator;html;generator;fluent-api;csharp;dotnet;jamstack</PackageTags>
+        <PackageProjectUrl>https://github.com/itsmuntadhar/sumer-ui</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/itsmuntadhar/sumer-ui</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\renderers\SumerUI.Renderers.csproj" />
+        <ProjectReference Include="..\lib\SumerUI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
 </Project>
