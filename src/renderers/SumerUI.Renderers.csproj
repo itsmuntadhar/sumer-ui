@@ -7,7 +7,7 @@
 
         <!-- Package Metadata -->
         <PackageId>SumerUI.Renderers</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
         <Authors>itsmuntadhar</Authors>
         <Company>itsmuntadhar</Company>
         <Description>HTML renderer for SumerUI. Converts SumerUI elements to HTML strings with support for minification and formatting options.</Description>

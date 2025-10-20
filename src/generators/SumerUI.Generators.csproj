@@ -7,7 +7,7 @@
 
         <!-- Package Metadata -->
         <PackageId>SumerUI.Generators</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
         <Authors>itsmuntadhar</Authors>
         <Company>itsmuntadhar</Company>
         <Description>Static site generator for SumerUI. Generate complete static websites from SumerUI elements with support for routing, asset management, and deployment options.</Description>

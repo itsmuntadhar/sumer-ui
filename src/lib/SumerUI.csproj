@@ -7,7 +7,7 @@
 
         <!-- Package Metadata -->
         <PackageId>SumerUI</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
         <Authors>itsmuntadhar</Authors>
         <Company>itsmuntadhar</Company>
         <Description>A type-safe, fluent C# library for generating static HTML with Tailwind-inspired utilities. Core library with element abstractions and extension methods.</Description>
