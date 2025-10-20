@@ -2,11 +2,15 @@ namespace SumerUI.Elements;
 
 public class Element
 {
+    private static int _idCounter = 0;
+
     public string Tag { get; }
-    public List<Element> Children { get; } = new();
-    public Dictionary<string, string> Attributes { get; } = new();
-    public Dictionary<string, string> Styles { get; } = new();
+    public List<Element> Children { get; } = [];
+    public Dictionary<string, string> Attributes { get; } = [];
+    public Dictionary<string, string> Styles { get; } = [];
+    public Dictionary<string, Dictionary<string, string>> ResponsiveStyles { get; } = [];
     public string? TextContent { get; set; }
+    public string? ResponsiveId { get; private set; }
 
     public Element(string tag)
     {
@@ -16,6 +20,11 @@ public class Element
     public Element()
     {
         Tag = "";
+    }
+
+    internal void EnsureResponsiveId()
+    {
+        ResponsiveId ??= $"sui-{Interlocked.Increment(ref _idCounter)}";
     }
 
     // fluent modifiers

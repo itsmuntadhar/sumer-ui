@@ -1,4 +1,5 @@
 ﻿using SumerUI.BasicGeneratorExample;
+using SumerUI.BasicGeneratorExample.Dashboard;
 using SumerUI.BasicGeneratorExample.Dashboard.Home;
 using SumerUI.Generators;
 
@@ -15,7 +16,9 @@ var builder = new PageBuilder()
         new Feature(Guid.NewGuid(), "Feature Six", "This is the sixth feature.")
     })))
     .AddPage("/about", () => new Layout().Content(new AboutView(layout)))
-    .AddPage("/contact", () => new Layout().Content(new ContactView(layout)));
+    .AddPage("/contact", () => new Layout().Content(new ContactView(layout)))
+    .AddPage("/grid-examples", () => new Layout().Content(new GridExamplesView()))
+    .AddPage("/responsive", () => new Layout().Content(new ResponsiveExamplesView()));
 
 var generator = new StaticSiteGenerator("./out", new StaticSiteOptions
 {
