@@ -35,8 +35,6 @@ await generator.GeneratePageAsync("/", page);
 
 ## Installation
 
-Not yet published to NuGet. Available soon!
-
 ```bash
 dotnet add package SumerUI
 dotnet add package SumerUI.Renderers
