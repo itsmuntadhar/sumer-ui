@@ -49,9 +49,12 @@ See [`examples/`](examples/) for complete examples:
 
 ## Documentation
 
-- [Getting Started](docs/getting-started.md) _(coming soon)_
-- [API Reference](docs/api-reference.md) _(coming soon)_
-- [Examples](examples/)
+- [Getting Started](docs/getting-started.md) - Installation and first steps
+- [API Reference](docs/api-reference.md) - Complete API documentation
+- [Components Guide](docs/components-guide.md) - Building reusable components
+- [Architecture Guide](docs/architecture-guide.md) - Project structure and patterns
+- [Real-World Examples](docs/examples.md) - Production-ready examples
+- [Code Examples](examples/) - Working example projects
 
 ## Contributing
 

@@ -215,10 +215,11 @@ git push -u origin gh-pages
 
 ## Next Steps
 
-- Check out the [API Reference](api-reference.md) for all available utilities
-- Browse the [examples](../examples/) for more complex use cases
-- Learn about [creating reusable components](components.md) _(coming soon)_
-- Join the discussion on [GitHub](https://github.com/itsmuntadhar/sumer-ui)
+- **[API Reference](api-reference.md)** - Explore all 300+ utility methods including Grid, Responsive, Typography, Transforms, and more
+- **[Components Guide](components-guide.md)** - Learn how to build reusable, maintainable components with patterns and best practices
+- **[Architecture Guide](architecture-guide.md)** - Structure large projects with separation of concerns, routing, and state management
+- **[Real-World Examples](examples.md)** - Production-ready examples including landing pages, blogs, and dashboards
+- **[Code Examples](../examples/)** - Working projects you can run and modify
 
 ## Examples
 
@@ -226,5 +227,11 @@ Complete working examples are available in the [`examples/`](../examples/) direc
 
 - [`basic/`](../examples/basic/) - ASP.NET server-side rendering example
 - [`basic-generator/`](../examples/basic-generator/) - Static site generation example
+
+## Community
+
+- Join the discussion on [GitHub](https://github.com/itsmuntadhar/sumer-ui)
+- Report issues or request features
+- Contribute to the project (see [CONTRIBUTING.md](../CONTRIBUTING.md))
 
 Happy building! 🚀
