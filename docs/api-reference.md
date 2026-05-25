@@ -1193,6 +1193,34 @@ var html = renderer.RenderToString(page);
 // Output: <div class="container"><h1>Hello</h1></div>
 ```
 
+### TypstRenderer
+
+Renders the same element tree as static, print-oriented Typst source.
+
+```csharp
+using SumerUI.Renderers;
+
+var renderer = new TypstRenderer(new TypstRendererOptions
+{
+    RootFontSizeInPoints = 12
+});
+
+string source = renderer.RenderToString(
+    Div()
+        .Padding("1rem")
+        .Content(H1().Text("Report").Text2Xl())
+);
+
+foreach (var warning in renderer.Diagnostics)
+{
+    Console.WriteLine($"{warning.Code} at {warning.ElementPath}: {warning.Message}");
+}
+```
+
+`RootFontSizeInPoints` defaults to `12pt` and controls conversion of CSS `rem` values. CSS `px` values are converted using `1px = 0.75pt`.
+
+The Typst renderer supports document text, headings, links, lists, static typography and colors, basic blocks, grids/stacks, spacing, borders, and supported transforms. DOM-only nodes and browser behavior such as scripts, inputs, responsive rules, hover styles, transitions, and animation are omitted with entries in `Diagnostics`. The renderer produces source only; compiling `.typ` files or PDFs is outside its API.
+
 ### IRenderer Interface
 
 Implement custom renderers:
@@ -1200,6 +1228,7 @@ Implement custom renderers:
 ```csharp
 public interface IRenderer
 {
+    Stream RenderToStream(Element element);
     string RenderToString(Element element);
 }
 ```

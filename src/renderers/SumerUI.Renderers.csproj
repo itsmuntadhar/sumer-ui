@@ -10,8 +10,8 @@
         <Version>0.2.0</Version>
         <Authors>itsmuntadhar</Authors>
         <Company>itsmuntadhar</Company>
-        <Description>HTML renderer for SumerUI. Converts SumerUI elements to HTML strings with support for minification and formatting options.</Description>
-        <PackageTags>html;renderer;static-site-generator;fluent-api;csharp;dotnet</PackageTags>
+        <Description>HTML and Typst source renderers for SumerUI elements.</Description>
+        <PackageTags>html;typst;renderer;static-site-generator;fluent-api;csharp;dotnet</PackageTags>
         <PackageProjectUrl>https://github.com/itsmuntadhar/sumer-ui</PackageProjectUrl>
         <RepositoryUrl>https://github.com/itsmuntadhar/sumer-ui</RepositoryUrl>
         <RepositoryType>git</RepositoryType>

@@ -9,6 +9,7 @@ A type-safe, fluent C# library for generating static HTML with Tailwind-inspired
 - 🎯 **Tailwind-inspired** - Familiar utility-first approach
 - 📦 **Static site generation** - Export to HTML files for CDN deployment
 - 🚀 **Zero JavaScript** - Pure server-side rendering
+- **Typst source rendering** - Reuse element trees for static print-oriented documents
 
 ## Quick Start
 
@@ -32,6 +33,22 @@ var page = Div()
 var generator = new StaticSiteGenerator("./out");
 await generator.GeneratePageAsync("/", page);
 ```
+
+### Typst Source
+
+```csharp
+using SumerUI.Renderers;
+
+var renderer = new TypstRenderer();
+var source = renderer.RenderToString(page);
+
+foreach (var diagnostic in renderer.Diagnostics)
+{
+    Console.WriteLine($"{diagnostic.Code}: {diagnostic.Message}");
+}
+```
+
+`TypstRenderer` emits Typst source; it does not compile PDFs. It maps static document styling and reports diagnostics when browser-only behavior such as responsive rules, hover states, scripts, or animations is omitted.
 
 ## Installation
 
